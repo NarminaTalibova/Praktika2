@@ -1,32 +1,118 @@
-# Prerequisites
-*.d
+namespace ConsoleApp7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //array qebel edir ve min elemntini geri qaytarir
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+            //int[] numArr = { 5, 6, 8, 55, 65, 75 };
+            //FindMin(numArr);
 
-# Precompiled Headers
-*.gch
-*.pch
+            //FindCharIndex("salam", 't');
+            //string str = "salam";
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
 
-# Fortran module files
-*.mod
-*.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+            //Console.WriteLine(IsPowerOfSecondNumber(2, 8));
+
+
+        }
+
+
+        //static void FindMin(int[] arr)
+        //{
+        //    int min = arr[0];
+        //    for (int i = 1; i <= arr.Length; i++)
+        //    {
+        //       if ( arr[i]<min)
+        //       {
+        //          min = arr[i];
+        //       }
+
+        //    }
+        //    Console.WriteLine(arr);
+        //}
+
+
+
+        // findchar methodu.  char stringde necenci indeksdedirse
+        // onu geri qaytarir. yoxdursa -1
+
+        //static int FindCharIndex(string str, char ch)
+        // {
+        //    for (int i = 0; i < str.Length; i++)
+        //    {
+        //        if (str[i] == ch)
+        //        {
+        //            return i;   
+        //        }
+        //        return -1;
+
+        //    }
+        //    //int index = str.IndexOf(ch);
+        //    //if (index == -1)
+        //    //{
+        //    //    return null  ;
+        //    //}
+        //    //else
+        //    //{
+        //    //    return index;
+        //    //}
+        // }
+
+
+
+        //  bir eded gonderilibse sqrt tapsin , iki eded gonderilibse birincini ikinci qeder quvvete yukseltsin 
+        // 2 eded qebul etsin , 1 2-nin quvvetidirmi?
+
+
+
+
+
+        //static bool IsPowerOfSecondNumber(int firstNumber, int secondNumber)
+        //{
+
+        //    while (firstNumber%secondNumber == 0)
+        //    {
+        //        if (firstNumber % secondNumber != 0) //quvveti deyil
+        //        {
+        //            return false;                   
+        //        }
+        //        firstNumber = firstNumber / secondNumber;
+        //    }
+        //    return true;    // quvvetidir
+        //}
+
+        static int Sqrt(int num1)
+        {
+            //Console.WriteLine(num1 * num1);
+            return num1*num1;
+            
+        }
+        static int Sqrt(int num1, int num2)
+        {
+            //Console.WriteLine( num1^num2);
+            int count = 0;
+            while (count < num2)
+            {
+                num1 *= num2;
+                count++;
+            }
+            return count;
+        }
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
+
